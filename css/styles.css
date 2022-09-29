@@ -59,10 +59,12 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 /* Хедер */
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
 .page-header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 .navigation {
     display: flex;
@@ -117,7 +119,8 @@ padding-bottom: 94px;
     color: var(--secondary-text-color);
     text-decoration: none;
 }
-.navigation a:hover, .navigation a:focus {
+.navigation .hov:hover, 
+.navigation .hov:focus {
     color: var(--accent-color);
 }
 .contacts a:hover, .contacts a:focus {
@@ -135,8 +138,6 @@ padding-bottom: 94px;
     text-transform: uppercase;
     margin: 0 auto;
     margin-bottom: 30px;
-    /* padding: 201px 237px 0px; */
-    
     width: 696px;
     
 }
@@ -145,9 +146,11 @@ padding-bottom: 94px;
     padding-top: 212px;
     padding-bottom: 200px;
     text-align: center;
+    border-top: 1px solid #ECECEC;
 }
 /* Кнопка */
 .hero-btn {
+    height: 38px;
     min-width: 73px;
     display: inline-block;
     padding: 6px 22px;
@@ -165,6 +168,7 @@ padding-bottom: 94px;
     border: none;
 }
 .hero-btn.primary {
+    height: 50px;
     min-width: 216px;
     padding: 10px 32px;
     background-color: var(--accent-color);
@@ -188,8 +192,15 @@ padding-bottom: 94px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.section-title {
+    display: block;
+    margin-bottom: 50px;
+}
 .section-features {
     padding-bottom: 47px;
+}
+.features-items {
+    width: 270px;
 }
 .features-list {
     display: flex;
@@ -260,10 +271,11 @@ padding-bottom: 94px;
 /* Футер */
 .footer-content { 
     background-color: #2F303A;
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .footer.logo {
+    display: block;
     margin-bottom: 20px;
 }
 .footer-content a {
@@ -272,10 +284,6 @@ padding-bottom: 94px;
 }
 .footer-content span {
     color: var(--accent-color);
-}
-.footer-content a:hover,
-.footer-content a:focus {
-color: var(--accent-color);
 }
 .address .map {
     font-size: 14px;
